@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>FCC Tendem</title>
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB6g9SrtjuzQVe-YtCZPu6bRW1CUYDImsc",
+    authDomain: "fcctandem.firebaseapp.com",
+    databaseURL: "https://fcctandem.firebaseio.com",
+    storageBucket: "fcctandem.appspot.com",
+    messagingSenderId: "164422762972"
+  };
+  firebase.initializeApp(config);
+</script>
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="jumbotron">
+  <div class="container">
+    <h1>FCC Tandem</h1>
+    <h2>Free Code Camp is tough, take a buddy.</h2>
+  </div>
+</div>
+<div class="container">
+  <h2>What is this?</h2>
+  <p>FCC Tandem is a website that allows for FCC vets to connect with newer users to help them through the curriculum. A mentor helps a mentee until their next 100 brownie points. So if a mentee has 250 brownie points, they will be helped until 300. We recommend
+    the pairs talk on Skype/Discord or Gitter/Slack.</p>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2 class=''>I want help</h2>
+      <p>If you want a mentor, enter your github username in the box below, we will find a mentor that fits your needs with more experience than you, they will then help you until your next FCC brownie point checkpoint (100 points, 200, ect.)</p>
+      <input type="text" class='mentee-text' placeholder='GitHub Username' />
+      <button id='mentee' class='button mentee-button'>Submit</button>
+    </div>
+    <div class="col-sm-6">
+      <h2 class=''>I want to help</h2>
+      <p>If you want to be a mentor, first make sure you have at least 200 brownie points, then enter your GitHub username into the box below. By doing so, you are signing on to help another camper get to their next brownie point checkpoint.</p>
+      <input type="text" class='mentor-text' placeholder='GitHub Username' />
+      <button id='mentor' class='button mentor-button'>Submit</button>
+    </div>
+  </div>
+</div>
+<hr>
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+   
+  var config = {  
+    apiKey: "AIzaSyB6g9SrtjuzQVe-YtCZPu6bRW1CUYDImsc",
+      authDomain: "fcctandem.firebaseapp.com",
+      databaseURL: "https://fcctandem.firebaseio.com",
+      storageBucket: "fcctandem.appspot.com",
+      messagingSenderId: "164422762972" 
+  }; 
+  firebase.initializeApp(config);
+</script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
